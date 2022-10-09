@@ -68,13 +68,13 @@ void loop() {
     tone(2, 1047, 1000);  // Activacion del Buzzer
     delay (700);
   }
-  if(distancia > 10  && distancia <= 20)
+ else if(distancia > 10  && distancia <= 20)
   {
     digitalWrite(RED, LOW);
     digitalWrite(GREEN, LOW);
     digitalWrite(BLUE, HIGH);
   }
-  if(distancia > 20)
+ else if(distancia > 20)
   {
     digitalWrite(RED, LOW);
     digitalWrite(GREEN, HIGH);
